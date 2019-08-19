@@ -6,7 +6,7 @@ default port: 8081
 
 ## How to run with docker-compose
 
-- start azkaban & mysql
+- start azkaban 
 
 ```
     git clone https://github.com/haxqer/azkaban.git \

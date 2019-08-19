@@ -21,4 +21,4 @@ VOLUME $AZKABAN_HOME
 USER $AZKABAN_USER
 WORKDIR $AZKABAN_HOME
 EXPOSE 8081
-ENTRYPOINT ["/var/azkaban/bin/start-solo.sh"]
+ENTRYPOINT ["/var/azkaban/bin/internal/internal-start-solo-server.sh"]

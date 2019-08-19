@@ -1,0 +1,19 @@
+version: '3.4'
+services:
+  azkaban:
+    image: haxqer/azkaban
+    container_name: azkaban-srv
+    environment:
+      - TZ='Asia/Shanghai'
+    #      - JVM_MINIMUM_MEMORY=1g
+    #      - JVM_MAXIMUM_MEMORY=12g
+    #      - JVM_CODE_CACHE_ARGS='-XX:InitialCodeCacheSize=1g -XX:ReservedCodeCacheSize=8g'
+    ports:
+      - "8081:8081"
+    volumes:
+      - azkaban_home_data:/var/azkaban
+    restart: always
+
+volumes:
+  azkaban_home_data:
+    external: false

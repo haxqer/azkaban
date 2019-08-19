@@ -9,7 +9,7 @@ default port: 8081
 - start azkaban & mysql
 
 ```
-    git clone https://github.com/haxqer/.git \
+    git clone https://github.com/haxqer/azkaban.git \
         && cd azkaban \
         && docker-compose up
 ```
